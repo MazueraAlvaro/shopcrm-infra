@@ -1,0 +1,17 @@
+version: "3.3"
+
+services:
+  jenkins:
+    ports:
+      - ${JENKINS_PORT}:8080
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ${DOCKER_BINARY}:/usr/local/bin/docker
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${JENKINS_HOME}:/var/jenkins_home
+    environment:
+      - JENKINS_ADMIN_ID=${JENKINS_ADMIN_ID}
+      - JENKINS_ADMIN_PASSWORD=${JENKINS_ADMIN_PASSWORD}
+      - JENKINS_URL=${JENKINS_URL}

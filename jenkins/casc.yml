@@ -1,10 +1,10 @@
 jenkins:
   securityRealm:
     local:
-      allowSignup: false
+      allowsSignup: false
       users:
         - id: ${JENKINS_ADMIN_ID}
-        - password: ${JENKINS_ADMIN_PASSWORD}
+          password: ${JENKINS_ADMIN_PASSWORD}
   authorizationStrategy:
     globalMatrix:
       permissions:
@@ -16,7 +16,7 @@ security:
   queueItemAuthenticator:
     authenticators:
       - global:
-        strategy: triggeringUsersAuthorizationStrategy
+          strategy: triggeringUsersAuthorizationStrategy
 unclassified:
   location:
     url: ${JENKINS_URL}

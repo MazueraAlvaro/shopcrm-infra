@@ -27,3 +27,4 @@ docker-workflow:latest
 docker-build-step:latest
 command-launcher:latest
 jaxb:latest
+ghprb:latest

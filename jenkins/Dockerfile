@@ -2,7 +2,7 @@ FROM jenkins/jenkins:lts
 
 USER root
 
-RUN apt-get update -Y
+RUN apt-get update -y
 
 RUN apt-get install ca-certificates curl gnupg lsb-release
 

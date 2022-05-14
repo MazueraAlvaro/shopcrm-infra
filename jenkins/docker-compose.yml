@@ -7,8 +7,10 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
+      args:
+        - DOCKER_GID=${DOCKER_GID}
     volumes:
-      - ${DOCKER_BINARY}:/usr/local/bin/docker
+      #      - ${DOCKER_BINARY}:/usr/local/bin/docker
       - /var/run/docker.sock:/var/run/docker.sock
       - ${JENKINS_HOME}:/var/jenkins_home
     environment:

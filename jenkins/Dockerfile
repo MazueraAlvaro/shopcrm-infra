@@ -14,6 +14,14 @@ RUN apt-get update -y
 
 RUN apt-get install docker-ce-cli docker-compose-plugin -y
 
+ARG DOCKER_GID
+
+RUN groupadd -g ${DOCKER_GID} docker
+
+RUN usermod -aG docker jenkins
+
+USER jenkins
+
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 
 ENV CASC_JENKINS_CONFIG /usr/local/jenkins_home/casc.yml

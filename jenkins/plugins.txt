@@ -28,6 +28,6 @@ docker-build-step:latest
 command-launcher:latest
 jaxb:latest
 ghprb:latest
-kubernetes-cd:latest
 snakeyaml-api:1.26.2
 jackson2-api:2.10.3
+kubernetes-cd:latest

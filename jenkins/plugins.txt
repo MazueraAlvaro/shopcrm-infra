@@ -19,7 +19,6 @@ timestamper:latest
 workflow-aggregator:latest
 ws-cleanup:latest
 authorize-project:latest 
-blueocean:latest
 docker:latest
 junit:latest
 branch-api:latest

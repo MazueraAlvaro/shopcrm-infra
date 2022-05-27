@@ -26,6 +26,6 @@ branch-api:latest
 docker-workflow:latest
 docker-build-step:latest
 command-launcher:latest
+kubernetes-cd:1.0.0
 jaxb:latest
 ghprb:latest
-kubernetes-cd:1.0.0

@@ -19,6 +19,7 @@ timestamper:latest
 workflow-aggregator:latest
 ws-cleanup:latest
 authorize-project:latest 
+blueocean:latest
 docker:latest
 junit:latest
 branch-api:latest
@@ -26,7 +27,5 @@ docker-workflow:latest
 docker-build-step:latest
 command-launcher:latest
 jaxb:latest
-snakeyaml-api:1.26.2
-jackson2-api:2.10.3
 ghprb:latest
-kubernetes-cd:latest
+kubernetes-cd:1.0.0
